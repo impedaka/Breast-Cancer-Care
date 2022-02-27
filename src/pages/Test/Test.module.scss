@@ -1,0 +1,126 @@
+.wrapper {
+    width: 100%;
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+    overflow: auto;
+    background-color: #fcf9f1;
+    padding: 50px 100px;
+    position: relative;
+    box-sizing: border-box;
+    
+    & > * {
+        box-sizing: border-box;
+        color: #5f5f5f !important;
+        position: relative;
+        z-index: 1;
+    }
+
+    & > input {
+        outline: none;
+    }
+
+    .img1{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .heading {
+        font-size: 40px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        width: 60%;
+    }
+    .subHeading {
+        width: 60%;
+    }
+
+    .subHead {
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 50px 0;
+    }
+
+    .bio,
+    .medical {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        & > div {
+            min-width: 45%;
+            max-width: 45%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+
+            & > * {
+                min-width: 40%;
+                max-width: 40%;
+                font-weight: bold;
+                font-size: 18px;
+                color: #5f5f5f !important;
+                text-align: start;
+            }
+
+            & > input,
+            & > select {
+                text-align: center;
+                outline: none;
+                border: 1px solid #737373;
+                padding: 5px;
+                font-size: 15px;
+            }
+        }
+    }
+    .consent {
+        margin-top: 50px;
+        margin-left: 100px;
+
+        input {
+            height: 15px;
+            width: 15px;
+        }
+
+        & > * {
+            margin-right: 25px;
+        }
+    }
+
+    .btn {
+        height: 40px;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white !important;
+        background: #eb4a8b;
+        margin: auto;
+        border-radius: 15px;
+        margin-top: 70px;
+        cursor: pointer;
+    }
+
+    .img3{
+        position: absolute;
+        bottom: -180px;
+        z-index: -10;
+    }
+
+    .img2{
+        position: absolute;
+        right: 0;
+        bottom: -200px;
+        z-index: 0;
+    }
+
+    .img4{
+        position: absolute;
+        left: 0;
+        z-index: 0;
+        bottom: -280px;
+    }
+}
